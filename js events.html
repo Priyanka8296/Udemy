@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Javascript demo</title>
+    <script language="javascript" type="text/javascript">
+        function MouseOver()
+        {
+            document.images["img1"].src= "image2.png"
+        }
+        function MouseOut()
+        {
+            document.images["img1"].src= "image3.png"
+        }
+        function Load()
+        {
+            document.images["img1"].src= "image4.png"
+        }
+    </script>
+</head>
+
+<body onload="Load()">
+    <img name="img1" onmouseover="MouseOver()" onmouseout="MouseOut()">
+</body>
+</html>
